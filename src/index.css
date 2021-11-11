@@ -7,35 +7,41 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  min-height: 100vh;
-  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
   color: white;
-}
-.container {
-  background-color: black;
-  min-width: 320px;
-  min-height: 568px;
-  padding: 30px;
 }
 
 .header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0px 10px 0px;
-  color: white;
+  color: black;
 }
+
 h2 {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
+
 img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  margin-left: 10px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
 }
 
 .name,
@@ -49,13 +55,13 @@ img {
 .password {
   margin-bottom: 40px;
 }
+
 .input {
   height: 32px;
   font-size: 20px;
   outline: none;
   width: 100%;
-  color: rgb(255, 255, 255);
-  background-color: black;
+  color: black;
   border-top-style: none;
   border-left-style: none;
   border-right-style: none;
@@ -64,7 +70,7 @@ img {
 }
 
 .error {
-  color: rgb(110, 104, 104);
+  color: rgba(82, 79, 79, 0.5);
   font-size: 15px;
 }
 
@@ -76,7 +82,7 @@ img {
   border: 2px solid rgb(110, 22, 22);
   color: white;
   padding: 10px 60px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   margin: auto;
   outline: none;
   cursor: pointer;
@@ -86,32 +92,15 @@ img {
 button:active {
   transform: translateY(2px);
 }
+
 .form-success {
-  text-align: center;
-
-  width: 320px;
-  color: white;
-  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+  color: 
+  rgb(110, 22, 22);
 }
-@media screen and (min-width: 992px) {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80%;
-    min-height: 50vh;
-    background: rgb(0, 0, 0);
-    border-radius: 20px;
-  }
-  .header,
-  form {
-    flex: 0 0 calc(50% - 1em);
-    margin: 20px 0;
-  }
-  .form {
-    align-self: center;
-  }
-}
-
 
 
